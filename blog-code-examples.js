@@ -46,6 +46,17 @@ console.log(b) // 'Gusteau'
 
 
 
+console.log(a) // ReferenceError: Cannot access 'a' before initialization
+console.log(b) // ReferenceError: Cannot access 'b' before initialization
+
+let a = 'Remy'  
+const b = 'Linguine'
+
+console.log(a) // 'Remy'
+console.log(b) // 'Linguine'
+
+
+
 
 
 function saying() {
@@ -99,7 +110,7 @@ function exterminator() {
 exterminator()
 
 console.log(cockroachA) // I'm alive!
-// Accessible as a global variable outside exterminator() function
+// Accessible as a global variable outside exterminator() function due to hoisting
 
 console.log(cockroachB) // ReferenceError: cockroachB is not defined
 // Since it was declared, its confined to the exterminator() function scope 
