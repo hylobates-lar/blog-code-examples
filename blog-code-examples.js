@@ -133,4 +133,4 @@ console.log(cockroachB) // ReferenceError: cockroachB is not defined
 
 (3 - 1) === 2 // true, still the same data type
 
-{} === {} // false, they are objects
+// {} === {} // false, they are objects
